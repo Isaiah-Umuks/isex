@@ -1,0 +1,41 @@
+.modal{
+    display: grid;
+    place-content: center;
+    position: fixed;
+    inset: 10%;
+    background:hsl(var(--clr-glass-dark));
+    backdrop-filter: blur(1rem);
+    gap: 1rem;
+    padding: 1rem;
+    color: rgb(179, 172, 172);
+}
+
+.cart{
+    padding: 1.8rem;
+    background: hsl(var(--clr-glass-blank));
+    cursor: pointer;
+}
+
+.cart a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(var(--clr-white));
+    font-size: clamp(.1rem,5vw + .5rem,3rem);
+}
+
+.close-modal {
+    position: absolute;
+    cursor: pointer;
+    color: var(--clr-white);
+}
+
+.close-modal .cm{
+    font-size: 18px;
+}
+
+@media (min-width: 50em) {
+    .modal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    }
+}

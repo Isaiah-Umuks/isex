@@ -1,0 +1,52 @@
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(50deg, rgba(0, 0, 0, 0.875), rgba(0, 0, 0, 0.308)), url(../assets/isex_bg14.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-inline: 4rem;
+}
+
+.section > * {
+    text-align: center;
+    max-width: 60ch;
+}
+
+.main-header {
+    font-size: 30px;
+    color: var(--clr-white);
+}
+
+.main-header span {
+    display: block;
+    text-transform: uppercase;
+    font-size: clamp(1rem,14vw + 1rem, 6rem);
+    color: hsl(var(--clr-glass-light));
+}
+
+.main-status {
+    font-size: clamp(.3rem, .4rem + .4rem,  2rem);
+    color: hsl(var(--clr-glass-font));
+}
+
+.main-btn {
+    margin-block: 1rem;
+}
+
+.main-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    border: solid rgb(63, 58, 58) 1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(104, 63, 63);
+}
+
+@media (max-width:900px) {
+    .section {
+        justify-content: center;
+    }
+}
